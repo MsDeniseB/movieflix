@@ -222,7 +222,7 @@
 79C:\Users\19168\OneDrive\Desktop\movieflix\src\components\registration-view.scss133083578745910374 0
 66C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\is-arrayish133083621116907333 1
 61C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\@babel133083621090799473 1
-61C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\@types133083621090649874 1
+61C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\@types133083621090779519 1
 66C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\@jridgewell133083621090799473 1
 79C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\cosmiconfig\package.json133083621122502367 0
 60C:\Users\19168\OneDrive\Desktop\movieflix\node_modules\@lmdb133083621635769348 1
