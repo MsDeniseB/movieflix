@@ -27095,7 +27095,7 @@ class MainView extends (0, _reactDefault.default).Component {
         };
     }
     componentDidMount() {
-        (0, _axiosDefault.default).get("https://movieflix.herokuapp.com/movies").then((response)=>{
+        (0, _axiosDefault.default).get("https://movieflix.herokuapp.com/movieflix-03840").then((response)=>{
             this.setState({
                 movies: response.data
             });
@@ -30381,24 +30381,64 @@ class LoginView extends (0, _reactDefault.default).Component {
             username: "",
             password: ""
         };
-        this.onUsernameChange = this.onUsernameChange.bind(this);
-        this.onPasswordChange = this.onPasswordChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    onUsernameChange(event) {
-        this.setState({
-            username: event.target.value
-        });
-    }
-    onPasswordChange(event) {
-        this.setState({
-            password: event.target.value
-        });
-    }
-    handleSubmit() {
-        const { username , password  } = this.state;
-        console.log(username, password);
-    /* Send a request to the server for authentication */ /* then call this.props.onLoggedIn(username) */ // this.props.onLoggedIn(username);
+        const handleSubmit = (e)=>{
+            e.preventDefault();
+            console.log(username, password);
+        /* Send a request to the server for authentication */ /* then call props.onLoggedIn(username) */ // props.onLoggedIn(username);
+        };
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Username:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: username,
+                            onChange: (e)=>setUsername(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/components/login-view.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/login-view.jsx",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Password:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "password",
+                            value: password,
+                            onChange: (e)=>setPassword(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/components/login-view.jsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/login-view.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    type: "submit",
+                    onClick: handleSubmit,
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "src/components/login-view.jsx",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/login-view.jsx",
+            lineNumber: 22,
+            columnNumber: 7
+        }, this);
     }
     render() {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -30412,13 +30452,13 @@ class LoginView extends (0, _reactDefault.default).Component {
                             onChange: this.onUsernameChange
                         }, void 0, false, {
                             fileName: "src/components/login-view.jsx",
-                            lineNumber: 42,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/login-view.jsx",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -30430,13 +30470,13 @@ class LoginView extends (0, _reactDefault.default).Component {
                             onChange: this.onPasswordChange
                         }, void 0, false, {
                             fileName: "src/components/login-view.jsx",
-                            lineNumber: 46,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/login-view.jsx",
-                    lineNumber: 44,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -30445,13 +30485,13 @@ class LoginView extends (0, _reactDefault.default).Component {
                     children: "Submit"
                 }, void 0, false, {
                     fileName: "src/components/login-view.jsx",
-                    lineNumber: 48,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/login-view.jsx",
-            lineNumber: 39,
+            lineNumber: 38,
             columnNumber: 7
         }, this);
     }
